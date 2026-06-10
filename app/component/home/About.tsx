@@ -17,6 +17,7 @@ const About = () => {
             alt="Arif Saputra"
             width={600}
             height={600}
+            className="w-full"
           />
         </div>
       </section>

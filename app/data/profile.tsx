@@ -11,7 +11,7 @@ const socialMedia = [
     ),
     title: "Github",
     decription: "arifsptra",
-    link: "https://github.com/arifsptra",
+    link: "https://github.com/arifsaputradev",
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ const socialMedia = [
     ),
     title: "LinkedIn",
     decription: "Arif Saputra",
-    link: "https://www.linkedin.com/in/arifsptrra/",
+    link: "https://www.linkedin.com/in/arifsaputradev/",
   },
   {
     id: 3,
@@ -37,10 +37,21 @@ const socialMedia = [
     ),
     title: "Instagram",
     decription: "@arif.sptrra",
-    link: "https://www.instagram.com/arif.sptrra",
+    link: "https://www.instagram.com/arifsaputradev",
   },
   {
     id: 4,
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M23.5 6.2s-.2-1.7-1-2.4c-.9-1-1.9-1-2.4-1.1C16.8 2.5 12 2.5 12 2.5s-4.8 0-8.1.2c-.5.1-1.5.1-2.4 1.1-.8.7-1 2.4-1 2.4S.3 8.1.3 10v1.8c0 1.9.2 3.8.2 3.8s.2 1.7 1 2.4c.9 1 2.1 1 2.6 1.1 1.9.2 7.9.2 7.9.2s4.8 0 8.1-.2c.5-.1 1.5-.1 2.4-1.1.8-.7 1-2.4 1-2.4s.2-1.9.2-3.8V10c0-1.9-.2-3.8-.2-3.8ZM9.7 14.8V7.9l6.2 3.5-6.2 3.4Z" />
+      </svg>
+    ),
+    title: "YouTube",
+    decription: "@arifsaputradev",
+    link: "https://www.youtube.com/@arifsaputradev",
+  },
+  {
+    id: 5,
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
         <path d="M0 0h24v24H0z" fill="none" />
@@ -62,7 +73,7 @@ const nameComponent = (
 export const profile = {
   en: {
     name: nameComponent,
-    role: "Software Engineer",
+    role: "Entrepreneur & Software Engineer",
     about:
       "I craft scalable, user-centric digital solutions that bridge intuitive design with robust functionality.",
     navigation: [
@@ -76,7 +87,7 @@ export const profile = {
   },
   id: {
     name: nameComponent,
-    role: "Software Engineer",
+    role: "Entrepreneur & Software Engineer",
     about:
       "Saya membangun solusi digital yang skalabel dan berpusat pada pengguna, menjembatani desain intuitif dengan fungsionalitas yang tangguh.",
     navigation: [

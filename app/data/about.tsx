@@ -53,8 +53,8 @@ export const about = {
         digital products.
       </p>
       <p className="leading-relaxed">
-        Beyond my engineering career, I am a serial entrepreneur dedicated to
-        digital innovation. I founded and currently serve as CEO of{" "}
+        Beyond my engineering career, I am a entrepreneur dedicated to digital
+        innovation. I founded and currently serve as CEO of{" "}
         <HoverLink
           href="https://selulosa.com"
           text="Selulosa"
@@ -117,7 +117,7 @@ export const about = {
         ide-ide inovatif menjadi produk digital yang berdampak.
       </p>
       <p className="leading-relaxed">
-        Di luar karir teknik saya, saya adalah seorang pengusaha serial yang
+        Di luar karir teknik saya, saya adalah seorang pengusaha yang
         berdedikasi pada inovasi digital. Saya mendirikan dan saat ini menjabat
         sebagai CEO di{" "}
         <Link
