@@ -10,30 +10,41 @@ const Header = () => {
   const currentProfile = profile[language];
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visible = entries.filter((entry) => entry.isIntersecting);
-
-        if (visible.length === 0) return;
-
-        visible.sort(
-          (a, b) => a.boundingClientRect.top - b.boundingClientRect.top
-        );
-
-        setActiveId(visible[0].target.id);
-      },
-      {
-        threshold: 0.3,
-        rootMargin: "0px 0px -50% 0px",
-      }
+    const sectionIds = currentProfile.navigation.map((nav) =>
+      nav.href.replace("#", ""),
     );
 
-    currentProfile.navigation.forEach((nav) => {
-      const el = document.getElementById(nav.href.replace("#", ""));
-      if (el) observer.observe(el);
-    });
+    const updateActiveSection = () => {
+      const activationPoint = window.innerHeight * 0.35;
+      const activeSection = sectionIds
+        .map((id) => ({
+          id,
+          top: document.getElementById(id)?.getBoundingClientRect().top,
+        }))
+        .filter(
+          (section): section is { id: string; top: number } =>
+            typeof section.top === "number",
+        )
+        .reduce((active, section) => {
+          if (section.top <= activationPoint) {
+            return section.id;
+          }
 
-    return () => observer.disconnect();
+          return active;
+        }, sectionIds[0] ?? "about");
+
+      setActiveId(activeSection);
+    };
+
+    updateActiveSection();
+
+    window.addEventListener("scroll", updateActiveSection, { passive: true });
+    window.addEventListener("resize", updateActiveSection);
+
+    return () => {
+      window.removeEventListener("scroll", updateActiveSection);
+      window.removeEventListener("resize", updateActiveSection);
+    };
   }, [currentProfile.navigation]);
 
   return (
@@ -47,7 +58,7 @@ const Header = () => {
         </h2>
         <p className="mt-4 max-w-xs leading-normal">{currentProfile.about}</p>
 
-        <div className="my-5">
+        {/* <div className="my-5">
           <Link
             href={currentProfile.file_resume}
             className="group flex items-baseline gap-2 w-max  rounded-lg fill-slate-800 dark:fill-slate-400 hover:fill-primary hover:text-primary dark:hover:fill-primary transition-all ease-in-out duration-150"
@@ -62,7 +73,7 @@ const Header = () => {
               </svg>
             </div>
           </Link>
-        </div>
+        </div> */}
 
         <nav className="nav hidden lg:block">
           <ul className="mt-6 2xl:mt-16 w-max">

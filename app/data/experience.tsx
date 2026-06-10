@@ -1,6 +1,29 @@
 export const experience = {
   en: [
     {
+      company: "Selulosa",
+      position: "Founder & CEO",
+      website: "https://selulosa.com",
+      start_mount: "December",
+      start_year: "2025",
+      end_mount: "Present",
+      end_year: "",
+      tasks: [
+        "Founded Selulosa as a digital technology company built to help businesses and MSMEs grow through practical, scalable, and impactful digital solutions.",
+        "Define the company vision, business direction, target market, and service roadmap across website development, mobile applications, automation, digital imaging, and custom business systems.",
+        "Lead product strategy and brand development for Selulosa's digital ecosystem, including Fotoin, Wator, and future products designed to solve real operational problems.",
+        "Develop B2B service offerings, partnership strategies, and client-focused solutions that connect business goals with the right digital execution.",
+      ],
+      results: ["https://selulosa.com"],
+      tools: [
+        "Business Strategy",
+        "Product Vision",
+        "Digital Innovation",
+        "Brand Development",
+        "B2B Services",
+      ],
+    },
+    {
       company: "PT Fintek Digital Nusantara",
       position: "Full Stack Developer",
       website: "https://findig.id",
@@ -85,6 +108,29 @@ export const experience = {
     },
   ],
   id: [
+    {
+      company: "Selulosa",
+      position: "Founder & CEO",
+      website: "https://selulosa.com",
+      start_mount: "Desember",
+      start_year: "2025",
+      end_mount: "Sekarang",
+      end_year: "",
+      tasks: [
+        "Mendirikan Selulosa sebagai perusahaan teknologi digital yang membantu bisnis dan UMKM berkembang melalui solusi digital yang praktis, skalabel, dan berdampak.",
+        "Menentukan visi perusahaan, arah bisnis, target pasar, dan roadmap layanan untuk pengembangan website, aplikasi seluler, otomatisasi, digital imaging, dan sistem bisnis kustom.",
+        "Memimpin strategi produk dan pengembangan brand dalam ekosistem digital Selulosa, termasuk Fotoin, Wator, serta produk-produk berikutnya yang dirancang untuk menyelesaikan masalah operasional nyata.",
+        "Mengembangkan layanan B2B, strategi kemitraan, dan solusi yang berfokus pada kebutuhan klien dengan menghubungkan tujuan bisnis dan eksekusi digital yang tepat.",
+      ],
+      results: ["https://selulosa.com"],
+      tools: [
+        "Strategi Bisnis",
+        "Visi Produk",
+        "Inovasi Digital",
+        "Pengembangan Brand",
+        "Layanan B2B",
+      ],
+    },
     {
       company: "PT Fintek Digital Nusantara",
       position: "Full Stack Developer",

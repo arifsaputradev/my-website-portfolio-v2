@@ -86,7 +86,7 @@ const Experience = () => {
             </li>
           ))}
         </ol>
-        <div className="mt-8">
+        {/* <div className="mt-8">
           <Link
             href={currentProfile.file_resume}
             className="group flex items-baseline gap-2 w-max  rounded-lg fill-slate-800  dark:fill-slate-400 hover:fill-primary hover:text-primary dark:hover:fill-primary transition-all ease-in-out duration-150"
@@ -101,7 +101,7 @@ const Experience = () => {
               </svg>
             </div>
           </Link>
-        </div>
+        </div> */}
       </div>
     </section>
   );
